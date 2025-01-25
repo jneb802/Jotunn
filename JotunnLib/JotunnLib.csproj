@@ -78,7 +78,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\JotunnBuildTask\JotunnBuildTask.csproj" />
+    <ProjectReference Include="..\JotunnBuildTask\JotunnBuildTask.csproj" >
+      <ExcludeAssets>runtime</ExcludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </ProjectReference>
   </ItemGroup>
 
   <PropertyGroup Condition="'$(OS)' == 'Windows_NT'">
