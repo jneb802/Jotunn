@@ -77,13 +77,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\JotunnBuildTask\JotunnBuildTask.csproj" >
-      <ExcludeAssets>runtime</ExcludeAssets>
-      <PrivateAssets>all</PrivateAssets>
-    </ProjectReference>
-  </ItemGroup>
-
   <PropertyGroup Condition="'$(OS)' == 'Windows_NT'">
     <StartAction>Program</StartAction>
     <StartProgram>$(VALHEIM_INSTALL)\valheim.exe</StartProgram>
@@ -153,7 +146,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="$(SolutionDir)JotunnBuildTask\bin\$(ConfigurationName)\net462\JotunnBuildTask.dll" Pack="true" PackagePath="build" />
+    <Content Include="$(SolutionDir)libraries\JotunnBuildTask.dll" Pack="true" PackagePath="build" />
     <Content Include="$(SolutionDir)JotunnBuildTask\bin\$(ConfigurationName)\net462\Mono.Cecil.dll" Pack="true" PackagePath="build" />
     <Content Include="$(SolutionDir)JotunnLib\BuildProps\JotunnLib.props" Pack="true" PackagePath="build" />
     <Content Include="$(SolutionDir)JotunnLib\BuildProps\JotunnLibRefsCorlib.props" Pack="true" PackagePath="build" />
