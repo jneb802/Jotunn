@@ -2,7 +2,7 @@
 
 ## Version 2.23.2
 * Fixed CustomGUIFront and CustomGUIBack offset slightly to the left
-* Fixed Nuget package could not be installed to do changes in the build pipeline
+* Fixed Nuget package could not be installed due to changes in the build pipeline
 
 ## Version 2.23.1
 * Fixed RPCs could be sent twice or to the wrong players if a specific target id is used
