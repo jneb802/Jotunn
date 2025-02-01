@@ -534,6 +534,9 @@ namespace Jotunn.Managers
             CustomGUIFront.transform.SetAsLastSibling();
             CustomGUIFront.GetComponent<RectTransform>().anchorMin = Vector2.zero;
             CustomGUIFront.GetComponent<RectTransform>().anchorMax = Vector2.one;
+            CustomGUIFront.GetComponent<RectTransform>().offsetMin = Vector2.zero;
+            CustomGUIFront.GetComponent<RectTransform>().offsetMax = Vector2.zero;
+            CustomGUIFront.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 
 #pragma warning disable CS0618 // Type or member is obsolete
             PixelFix = CustomGUIFront;
@@ -545,6 +548,9 @@ namespace Jotunn.Managers
             CustomGUIBack.transform.SetAsFirstSibling();
             CustomGUIBack.GetComponent<RectTransform>().anchorMin = Vector2.zero;
             CustomGUIBack.GetComponent<RectTransform>().anchorMax = Vector2.one;
+            CustomGUIBack.GetComponent<RectTransform>().offsetMin = Vector2.zero;
+            CustomGUIBack.GetComponent<RectTransform>().offsetMax = Vector2.zero;
+            CustomGUIBack.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
 
 #pragma warning disable CS0612 // Method is obsolete
             InvokeOnPixelFixCreated();
